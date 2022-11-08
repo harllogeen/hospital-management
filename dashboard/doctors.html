@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../images/logo-icon.svg">
+    <link rel="shortcut icon" href="../images/hms_favicon-removebg-preview (1).png" type="image/x-icon">
+    <title>Doctors</title>
+    <!---aos css file cdn link---->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="./styles_0.css">
+    <link rel="stylesheet" href="./styles_2.css">
+    <link rel="stylesheet" href="./doctors.css">
+</head>
+
+<body class="gr-bg">
+    <div class="cover-me">
+        <aside class="bg-color wh">
+            <div class="nav-top">
+                <a href="../index.html" class="nav-top">
+                    <i class="fas fa-heartbeat"></i>
+                    <div>HealthMS</div>
+                </a>
+            </div>
+
+            <nav>
+                <a href="" class="active">
+                    <i class="fa fa-home"></i>
+                    <div>Dashboard</div>
+                </a>
+
+                <a href="#" target="blank">
+                    <i class="fa fa-calendar"></i>
+                    <div>Schedule</div>
+                </a>
+
+                <a href="#" target="blank">
+                    <i class="fas fa-clinic-medical"></i>
+                    <div>Patient"s
+                        <br> record
+                    </div>
+                </a>
+
+                <a href="#" target="blank">
+                    <i class="fa fa-envelope"></i>
+                    <div>Messages</div>
+                </a>
+
+                <a href="#" target="blank">
+                    <i class="fas fa-file-prescription"></i>
+                    <div>Prescriptions</div>
+                </a>
+
+            </nav>
+
+            <nav>
+                <a href="/admin.html" class="nav-btm2">
+                    <i class="fa fa-sign-out"></i>
+                    <div>Log-Out</div>
+                </a>
+            </nav>
+        </aside>
+        <main class="purple-bg">
+            <div class="main-nav wh-bg">
+                <div>
+                    <h2>Doctor's Dashboard</h2>
+                </div>
+                <div class="flex gap2 top-notification">
+                    <div class="flex gap">
+                        <div class="notification">
+                            <i class="fa fa-bell"></i>
+                            <div>2</div>
+                        </div>
+                        <div>
+                            <h4>Alert</h4>
+                        </div>
+                    </div>
+
+                    <div class="flex gap">
+                        <div><i class="fa fa-question-circle-o"></i></div>
+                        <h4>Help</h4>
+                    </div>
+
+                    <div class="flex gap">
+                        <div><i class="fa fa-gear"></i></div>
+                        <h4>Settings</h4>
+                    </div>
+                </div>
+            </div>
+
+            <section class="admin-dashboard-main">
+                <div class="f-container">
+                    <h4 class="f-20">Report</h4>
+                    <p class="f-18">This Month &nbsp;<i class="fa fa-angle-down"></i> </p>
+                </div>
+                <div class="container mg-top">
+                    <div class="col-2-3 doctor-topmost-card wh-bg br-8 flex gap2" data-aos="fade-right">
+                        <div class="bleu br pd-3 icon-divv">
+                            <div class="sm-bold-text lt-bl"><i class="fa fa-user-plus"></i></div>
+                        </div>
+
+                        <div data-aos="fade-left">
+                            <div class="">Patients</div>
+                            <div class=" d-numbers">500</div>
+                        </div>
+                    </div>
+
+                    <div class="col-2-3 doctor-topmost-card wh-bg br-8 flex gap2" data-aos="zoom-out">
+                        <div class="bleu br pd-3 icon-divv">
+                            <div class="sm-bold-text lt-bl"><i class="fas fa-phone-volume"></i></div>
+                        </div>
+
+                        <div data-aos="fade-up">
+                            <div class="">Consultation</div>
+                            <div class="d-numbers">70</div>
+                        </div>
+                    </div>
+
+                    <div class="col-2-3 doctor-topmost-card wh-bg br-8 flex gap2" data-aos="fade-right">
+                        <div class="bleu br pd-3 icon-divv">
+                            <div class="sm-bold-text lt-bl"> <i class="fas fa-procedures"></i></div>
+                        </div>
+
+                        <div data-aos="fade-left">
+                            <div class="">Surgeries</div>
+                            <div class="d-numbers">50</div>
+                        </div>
+                    </div>
+
+                    <div class="col-2-3 doctor-topmost-card wh-bg br-8 flex gap2" data-aos="fade-left">
+                        <div class="bleu br pd-3 icon-divv">
+                            <div class="sm-bold-text lt-bl"> <i class="fa fa-syringe"></i></div>
+                        </div>
+
+                        <div data-aos="fade-down">
+                            <div class="">Injects</div>
+                            <div class="d-numbers">402</div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="dashboard-main">
+                <div class="main-large">
+                    <div class="next-patients br-8 wh-bg m-btm-2 current">
+                        <div class="f-container activities-header rel">
+                            <div class="f-20 bd-7 b-btm f-25">Appointment Requests</div>
+                            <h4 class="f-18"> See All </h4>
+                            <div id="requestAccepted">Appointment Accepted!!!</div>
+                        </div>
+
+                        <div id="appointment-requests" class="pd-3">
+
+                            <!-- tunil -->
+
+                        </div>
+                    </div>
+
+                    <div class="next-patients br-8 wh-bg m-btm-2 current">
+                        <div class="f-container activities-header">
+                            <div class="f-18 bd-7 b-btm f-25">Today's Appointment</div>
+                        </div>
+
+                        <div id="activities" class="pd-3 ">
+                            <div class="f-container gap2">
+                                <div class="flex gap1">
+                                    <img src="../images/pic-1.png" class="patientNotImage">
+                                    <div>
+                                        <h4 class="m-btm-1 f-18">Jacob Blit </h4>
+                                        <p class="f-16">Scaling</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4 class="f-16 blue">On Going</h4>
+                                </div>
+                            </div>
+
+                            <div class="f-container gap2">
+                                <div class="flex gap1">
+                                    <img src="../images/pic-3.png" class="patientNotImage">
+                                    <div>
+                                        <h4 class="m-btm-1 f-18">Murray Konz</h4>
+                                        <p class="f-16">Medical Checkup</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4>12:00</h4>
+                                </div>
+                            </div>
+
+                            <div class="f-container gap2">
+                                <div class="flex gap1">
+                                    <img src="../images/pic-1.png" class="patientNotImage">
+                                    <div>
+                                        <h4 class="m-btm-1 f-18">Lawani Victor</h4>
+                                        <p class="f-16">Consultation</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4>14:00</h4>
+                                </div>
+                            </div>
+
+                            <div class="f-container gap2">
+                                <div class="flex gap1">
+                                    <img src="../images/pic-2.png" class="patientNotImage">
+                                    <div>
+                                        <h4 class="m-btm-1 f-18">Benjamin Olawale</h4>
+                                        <p class="f-16">Scaling</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4>15:00</h4>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="#">View All</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="main-small">
+
+                    <div class="next-patients br-8 wh-bg m-btm-2">
+                        <img src="../images/big-calender.svg">
+                    </div>
+
+                    <div class="next-patients br-8 wh-bg m-btm-2">
+                        <img src="../images/patients by gender.svg">
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+        <!--aos js file cdn link-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <script src="https://kit.fontawesome.com/aedd297eaa.js" crossorigin="anonymous"></script>
+        <script src="../js/appointment-requests.js"></script>
+        <script src="../js/script.js"></script>
+
+
+        <script>
+            AOS.init({
+                duration: 1000,
+                delay: 400
+            })
+        </script>
+    </div>
+</body>
+
+</html>

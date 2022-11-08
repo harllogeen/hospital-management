@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>patient reg</title>
+    <link rel="stylesheet" href="./patient.css">
+</head>
+
+<body>
+    <div id="myowncontainer">
+        <div class="wrapper">
+            <div class="title">
+                Patient Registration Form
+            </div>
+            <div class="form">
+                <div class="inputfield">
+                    <label>First Name</label>
+                    <input type="text" class="input" id="firstname">
+                </div>
+                <div class="inputfield">
+                    <label>Last Name</label>
+                    <input type="text" class="input" id="lastname">
+                </div>
+                <div class="inputfield">
+                    <label>Phone Number</label>
+                    <input type="text" class="input" id="number">
+                </div>
+                <div class="inputfield">
+                    <label>Email Address</label>
+                    <input type="text" class="input" id="email">
+                </div>
+                <div class="inputfield">
+                    <label>Password</label>
+                    <input type="password" class="input" id="password">
+                </div>
+                <div class="inputfield">
+                    <label>Confirm Password</label>
+                    <input type="password" class="input" id="confirmpassword">
+                </div>
+                <div class="inputfield">
+                    <label>Next of Kin</label>
+                    <div class="custom_select">
+                        <select>
+                      <option value="">Select</option>
+                      <option value="male" id="father">Father</option>
+                      <option value="female" id="mother">Mother</option>
+                      <option value="male" id="brother">Brother</option>
+                      <option value="female" id="sister">Sister</option>
+                      <option value="male" id="uncle">Uncle</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="inputfield">
+                    <label>Gender</label>
+                    <div class="custom_select">
+                        <select>
+                      <option value="">Select</option>
+                      <option value="male" id="male">Male</option>
+                      <option value="female" id="female">Female</option>
+                    </select>
+                    </div>
+                </div>
+
+                <div class="inputfield">
+                    <label>Address</label>
+                    <textarea class="textarea" id="message"></textarea>
+                </div>
+                <div class="inputfield">
+                    <label>Postal Code</label>
+                    <input type="text" class="input" id="postal">
+                </div>
+                <div class="inputfield terms">
+                    <label class="check">
+                    <input type="checkbox" id="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                    <p>Agreed to terms and conditions</p>
+
+                </div>
+                <div class="agree">
+                    <p>You agree that the information you provide us with when you use the Site will be true and complete and that you will keep it true and complete</p>
+                </div>
+                <div class="inputfield">
+                    <input type="submit" id="submit" value="Register" class="btn" onclick="openpatForms()">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="patient.js"></script>
+</body>
+
+</html>

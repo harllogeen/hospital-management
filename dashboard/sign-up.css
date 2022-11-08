@@ -1,0 +1,45 @@
+ .the-form {
+    padding: 20px;
+    background-color: ghostwhite;
+    width: 80%;
+  }
+  
+  .the-form form {
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid #A60000;
+    background-color: #F6F6F6;
+    width: 70%;
+  }
+  
+  .the-form form input {
+    padding: 20px 50px;
+    text-align: center;
+    outline: none;
+    width: 100%;
+    border: none;
+    background-color: #fff;
+  }
+  .the-form form textarea{
+      width: 100%;
+  }
+  
+  .the-form form input:focus {
+    outline: #A60000 1px solid;
+  }
+  
+  .the-form button {
+    padding: 15px;
+    font-weight: 500;
+    width: fit-content;
+    border: none;
+    background-color: #A60000;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  .the-form button:hover {
+    color: #FF6B0B;
+    cursor: pointer;
+  }

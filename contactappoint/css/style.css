@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+:root {
+    --green: #16a085;
+    --black: #444;
+    --white: #fff;
+    --light-color: #777;
+    --wc-green: #7ad03a;
+    --wc-red: #a00;
+    --wc-orange: #ffba00;
+    --wc-blue: #2ea2cc;
+    --wc-light-blue: #000033;
+    --wc-primary: #a46497;
+    --wc-purple: #972EA9;
+    --wc-primary-text: #fff;
+    --box-shadow: .5rem .5rem 0 rgba(111, 117, 116, 0.2);
+    --text-shadow: .4rem .4rem 0 rgba(236, 152, 152, 0.2);
+    --border: .2rem solid var(--wc-red);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+#my-container {
+    overflow-x: hidden;
+}
+
+.header {
+    padding: 1rem 3rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--wc-light-blue);
+}
+
+.header .logo {
+    font-size: 2.2rem;
+    color: var(--black);
+}
+
+.mylogo {
+    font-size: 2.2rem;
+    color: var(--white);
+}
+
+.logo.active,
+.logo:hover {
+    background: var( --wc-primary);
+    transition: .3s;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+}
+
+.header .logo i {
+    color: var(--white);
+}
+
+.header .navbar a {
+    font-size: 1.3rem;
+    color: var(--white);
+    margin-left: 2rem;
+    text-decoration: none;
+}
+
+.navbar a.active,
+.navbar a:hover {
+    background: var( --white);
+    transition: .3s;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    color: var(--wc-blue);
+}
+
+.header .navbar a:hover {
+    color: var(--wc-blue);
+}
+
+#menu-btn {
+    font-size: 2rem;
+    border-radius: .5rem;
+    background: #eee;
+    color: var(--wc-light-blue);
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.section-1 {
+    background-image: url(../images/contact-background.jpg);
+    height: 30vh;
+    background-position: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2rem;
+    margin-top: 4rem;
+}
+
+.section-1 .contact-link h1 {
+    color: #fff;
+    font-size: 35px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.section-1 .contact-link h1::after {
+    content: "";
+    width: 60px;
+    height: 2px;
+    display: block;
+    line-height: 30px;
+    background-color: var(--wc-light-blue);
+}
+
+.section-1 .contact-link p .home a {
+    color: var(--wc-orange);
+    text-decoration: none;
+}
+
+.section-1 .contact-link p .contactUs a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.content-part .main-content-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 50px 30px;
+    margin: 20px;
+    gap: 10px;
+}
+
+.content-part .content-content {
+    line-height: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+.content-part .content-content h2::after {
+    content: "";
+    margin: 10px auto 0;
+    width: 60px;
+    height: 2px;
+    display: block;
+    line-height: 30px;
+    background-color: black;
+}
+
+
+/* .map-part {
+    position: relative;
+} */
+
+.map-part iframe {
+    width: 100%;
+    height: 100vh;
+}
+
+.map-part .the-form h2 {
+    color: var(--wc-light-blue);
+    padding-left: 4rem;
+}
+
+.map-part .the-form p {
+    padding-left: 4rem;
+}
+
+.map-part .the-form form {
+    padding: 4rem;
+    margin: 2rem 4rem;
+    border: 2px solid var(--wc-light-blue);
+    background-color: #F6F6F6;
+    border-radius: 5px;
+}
+
+.map-part .the-form form input,
+.map-part .the-form form textarea {
+    padding: 1rem 1rem;
+    text-align: center;
+    outline: none;
+    width: 100%;
+    border: none;
+    background-color: #fff;
+}
+
+.map-part .the-form form input:focus,
+.map-part .the-form form textarea:focus {
+    outline: var(--wc-blue) 1px solid;
+}
+
+.map-part .the-form button {
+    padding: 15px;
+    font-weight: 500;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    border: none;
+    background-color: var(--wc-blue);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 1rem 4rem;
+}
+
+.map-part .the-form button:hover {
+    color: #f36201;
+    cursor: pointer;
+}
+
+.headings {
+    text-align: center;
+}
+
+.headings h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.headings h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.headings h1 ::after,
+.headings h2 ::after {
+    content: "";
+    margin: 10px auto 0;
+    width: 100px;
+    height: 5px;
+    display: block;
+    line-height: 30px;
+    background-color: black;
+}
+
+.headings p {
+    font-size: 18px;
+}
+
+.head h4 {
+    font-size: 20px;
+}
+
+.head p {
+    font-size: 18px;
+}
+
+.appointment-content {
+    padding: 90px 20px;
+}
+
+.appointment-content .appointment-card-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.appointment-content .appointment-card-container .appointment-card {
+    text-align: center;
+    line-height: 40px;
+    width: 30%;
+}
+
+.appointment-content .appointment-card-container .icon-div {
+    height: 90px;
+    line-height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent gray;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.section2 {
+    padding: 20px;
+}
+
+.section2 .parallax {
+    background-image: url("../images/bg-heading-paralax.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section2 .parallax-effect {
+    height: 700px;
+}
+
+.section2 .the-form {
+    padding: 20px;
+    /* margin: auto 50px; */
+    background-color: #F6F6F6;
+}
+
+.section2 form {
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid #2ea2cc;
+    background-color: #F6F6F6;
+    width: 90%;
+}
+
+.section2 form input {
+    padding: 20px 50px;
+    text-align: center;
+    outline: none;
+    width: 100%;
+    border: none;
+    background-color: #fff;
+}
+
+.section2 form input:focus {
+    outline: var(--wc-blue) 1px solid;
+}
+
+.section2 button {
+    padding: 15px;
+    font-weight: 500;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    border: none;
+    background-color: var(--wc-light-blue);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    margin-left: 1.5rem;
+}
+
+.section2 button:hover {
+    color: #FF6B0B;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: var(--wc-light-blue);
+}
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    gap: 5rem;
+    padding: 2.5rem;
+    margin-top: 2rem;
+}
+
+.footer .box-container .box h3 {
+    font-size: 1.5rem;
+    color: var(--white);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a {
+    display: block;
+    font-size: 1rem;
+    color: var(--white);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a i {
+    padding-right: .5rem;
+    color: var(--wc-orange);
+}
+
+.footer .box-container .box a:hover i {
+    padding: 1rem;
+}
+
+.footer .credit {
+    padding: 1rem;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1rem;
+    color: var(--white);
+    border-top: .2rem solid rgba(228, 206, 13, 0.1);
+}
+
+
+/*# sourceMappingURL=style.css.map */
+
+@media (max-width:768px) {
+    #menu-btn {
+        display: initial;
+        color: var(--wc-light-blue);
+    }
+    .header .navbar {
+        position: absolute;
+        top: 115%;
+        right: 2rem;
+        border-radius: .5rem;
+        box-shadow: var(--box-shadow);
+        width: 20rem;
+        border: var(--border);
+        background: #fff;
+        transform: scale(0);
+        opacity: 0;
+        transform-origin: top right;
+        transition: none;
+    }
+    .header .navbar.active {
+        transform: scale(1);
+        opacity: 1;
+        transition: .5s ease-out;
+    }
+    .header .navbar a {
+        font-size: 1rem;
+        display: block;
+        margin: 2.5rem;
+        color: #09086e;
+    }
+    .header .navbar a.active {
+        padding: unset;
+    }
+    .contact-link {
+        padding: unset;
+    }
+    #menu-btn {
+        font-size: unset;
+    }
+}
+
+@media (max-width:425px) {
+    .content-part .main-content-container {
+        display: block;
+        width: 100%;
+        margin: unset;
+    }
+    .section-1 {
+        height: unset;
+        background-position: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #menu-btn {
+        font-size: 1.5rem;
+        padding: .5rem .5rem;
+    }
+    .mylogo {
+        font-size: 1.5rem;
+    }
+    .appointment-content .appointment-card-container {
+        display: block;
+        width: 100%;
+    }
+    .appointment-card {
+        width: 100%;
+        text-align: center;
+    }
+    .appointment-content .appointment-card-container .appointment-card {
+        width: unset;
+        margin: 1rem;
+    }
+    .map-part .the-form form {
+        margin: 2rem;
+        padding: 1rem;
+    }
+    .content-part .content-content {
+        padding: 2rem;
+    }
+    .head {
+        width: 100%;
+    }
+    .map-part .the-form h2 {
+        color: var(--wc-light-blue);
+        padding-left: 2rem;
+        padding-top: 2rem;
+    }
+    .map-part .the-form p {
+        padding-left: 2rem;
+    }
+    .header .navbar {
+        right: 1rem;
+    }
+}
+
+@media (max-width:320px) {
+    .header .navbar {
+        width: 10rem;
+    }
+    .header .navbar a {
+        font-size: 1.2rem;
+    }
+}

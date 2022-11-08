@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../images/logo-icon.svg">
+    <link rel="shortcut icon" href="../images/hms_favicon-removebg-preview (1).png" type="image/x-icon">
+    <title>Nurse's Page</title>
+    <!---aos css file cdn link---->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="./styles_0.css">
+    <link rel="stylesheet" href="./styles_2.css">
+    <link rel="stylesheet" href="./sign-up.css">
+</head>
+
+<body>
+    <aside class="bg-color wh">
+        <div class="nav-top">
+            <a href="../index.html" class="nav-top">
+                <i class="fas fa-heartbeat"></i>
+                <div>HealthMS</div>
+            </a>
+        </div>
+
+        <nav>
+            <a href="#" class="active">
+                <i class="fa fa-home"></i>
+                <div>Dashboard</div>
+            </a>
+
+            <a href="#" target="blank">
+                <i class="fa fa-calendar-check-o"></i>
+                <div>Schedule</div>
+            </a>
+
+            <a href="#" target="blank">
+                <i class="fa fa-file"></i>
+                <div>Patient's Record</div>
+            </a>
+
+            <a href="#" target="blank">
+                <i class="fas fa-prescription-bottle-alt"></i>
+                <div>Prescriptions</div>
+            </a>
+
+            <a href="#" target="blank">
+                <i class="fas fa-file-medical"></i>
+                <div>Report</div>
+            </a>
+
+            <a href="#" target="blank">
+                <i class="fa fa-comments-o"></i>
+                <div>Chats</div>
+            </a>
+        </nav>
+
+        <nav>
+            <a href="/admin.html" class="nav-btm2">
+                <i class="fa fa-sign-out"></i>
+                <div>Log-Out</div>
+            </a>
+        </nav>
+
+    </aside>
+    <main class="purple-bg">
+        <div class="main-nav wh-bg"> 
+            <div>
+                <h2> Nurses' Dashboard</h2>
+            </div>
+            <div class="flex gap2 top-notification">
+                <div class="flex gap">
+                    <div class="notification">
+                        <i class="fa fa-bell"></i>
+                        <div>2</div>
+                    </div>
+                    <div>
+                        <h4>Alert</h4>
+                    </div>
+                </div>
+
+                <div class="flex gap">
+                    <div><i class="fa fa-question-circle-o"></i></div>
+                    <h4>Help</h4>
+                </div>
+
+                <div class="flex gap">
+                    <div><i class="fa fa-gear"></i></div>
+                    <h4>Settings</h4>
+                </div>
+            </div>
+        </div>
+
+        <section class="purple-bg schedule-top">
+            <div class=" pd-3s f-container">
+                <h2 class="m-btm-1">Welcome</h2>
+                <h4>Nurse Mary</h4>
+            </div>
+            <div class="pd-3 bg-color rel br-8 wh">
+                <h1 class="m-btm-1">Your Schedule</h1>
+
+                <p class="m-btm-1 dashboard-p" id="schedule_p">You are on Night Duty for today</p>
+
+                <div class="the-buttons flex">
+                    <button class="wh lt-bl-bg-2"><i class="wh fa fa-eye"></i> &nbsp; Check your roaster</button>
+                    <button class="wh lt-bl-bg-2"><i class="wh fa fa-eye"></i> &nbsp; Register a new patient</button>
+                </div>
+
+                <img class="dashboard-cartoon" src="../images/schedule-cartoon.svg" alt="">
+            </div>
+
+            <div class="container m-btm-2 mg-top">
+                <div class="col-2-3 pd-3s wh-bg br-8" data-aos="fade-right">
+                    <div class="f-container m-btm-1">
+                        <div class="sm-bold-text">Appointments </div>
+                    </div>
+
+                    <div class="d-numbers total-patients">50</div>
+                    <div class="card-sm-text"><button class="wh lt-bl-bg-2">Check with the doctor </button></div>
+                </div>
+
+                <div class="col-2-3 pd-3s wh-bg br-8" data-aos="fade-up">
+                    <div class="f-container m-btm-1">
+                        <div class="sm-bold-text">New Patients </div>
+                    </div>
+
+                    <div class="d-numbers scheduled-appointments">20</div>
+
+                    <div class="card-sm-text flex gap"><button class="wh lt-bl-bg-2">Register</button>
+                    </div>
+
+                </div>
+
+                <div class="col-2-3 pd-3s wh-bg br-8" data-aos="fade-left">
+                    <div class="f-container m-btm-1">
+                        <div class="sm-bold-text">Medications</div>
+                    </div>
+
+                    <div class="d-numbers scheduled-appointments">50</div>
+
+                    <div class="card-sm-text"><button class="wh lt-bl-bg-2">Check and Log</button></div>
+                </div>
+
+                <div class="col-2-3 pd-3s wh-bg br-8" data-aos="fade-down">
+                    <div class="f-container m-btm-1">
+                        <div class="sm-bold-text"> Visitors </div>
+                    </div>
+
+                    <div class="d-numbers waiting-room">323</div>
+
+                    <div class="card-sm-text"><button class="wh lt-bl-bg-2">Check and Log</button></div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="">
+            <div class="dashboard-main">
+                <div class="main-large">
+                    <div class="next-patients br-8 wh-bg m-btm-2">
+                        <div class="f-container activities-header">
+                            <div class="f-18 bd-7 b-btm f-14-sm">Vital Signs</div>
+                        </div>
+
+                        <div id="vitals-form" class="pd-3 ">
+                            <form>
+                                <input type="text" placeholder="Patient's Name">
+                                <input type="text" placeholder="Card Number">
+                                <input type="text" placeholder="Temprature">
+                                <input type="text" placeholder="Blood pressure">
+                                <input type="text" placeholder="Pulse">
+                                <input type="text" placeholder="Respiratory rate">
+                                <button type="submit" class="wh f-20">Save Vitals</button>
+                            </form>
+
+                        </div>
+                    </div>
+
+                    <div id="appointments" class="next-patients-table-div br-8 wh-bg m-btm-2">
+                        <div class="f-container pd-3">
+                            <div class="f-18 f-14-sm bd-7 b-btm">Booked Appointment List</div>
+                            <div class="lt-bl f-14-sm">View All &nbsp; <span class="orange"><i class="fa fa-arrow-right"
+                              ></i></span></div>
+                        </div>
+                        <div class="pd-3 f-container">
+                            <div class="pd br wh bleu">Add New &nbsp; <i class="fa fa-plus"></i></div>
+                            <div class="pd br wh bleu">Tools &nbsp; <i class="fa fa-angle-down"></i></div>
+                        </div>
+                        <table class="pd-3">
+                            <thead>
+                                <tr>
+                                    <th style="text-align: center;"><input type="checkbox"></th>
+                                    <th>Patient Name</th>
+                                    <th>Assigned Doctor</th>
+                                    <th>Date</th>
+                                    <th>Time</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="text-align: center;"><input type="checkbox"></td>
+                                    <td>Jayesh Patel</td>
+                                    <td>Dr.kenny Josh</td>
+                                    <td>
+                                        12/04/2022
+                                    </td>
+                                    <td>10:45</td>
+                                    <td>
+                                        <div style="background-color: rgb(204, 112, 26);" class="pd-3 br wh flex shdw">
+                                            <p class="f-16">Actions &nbsp; <i class="fa fa-angle-down"></i> </p>
+                                        </div>
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td style="text-align: center;"><input type="checkbox"></td>
+                                    <td>Jayesh Patel</td>
+                                    <td>Dr.kenny Josh</td>
+                                    <td>
+                                        12/04/2022
+                                    </td>
+                                    <td>10:45</td>
+                                    <td>
+                                        <div style="background-color: rgb(204, 112, 26);" class="pd-3 br wh f-container shdw">
+                                            <p class="f-16">Actions &nbsp; <i class="fa fa-angle-down">
+                                            </i> </p>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td style="text-align: center;"><input type="checkbox"></td>
+                                    <td>Jayesh Patel</td>
+                                    <td>Dr.kenny Josh</td>
+                                    <td>
+                                        12/04/2022
+                                    </td>
+                                    <td>10:45</td>
+                                    <td>
+                                        <div style="background-color: rgb(204, 112, 26);" class="pd-3 br wh f-container shdw">
+                                            <p class="f-16">Actions &nbsp; <i class="fa fa-angle-down"></i> </p>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td style="text-align: center;"><input type="checkbox"></td>
+                                    <td>Jayesh Patel</td>
+                                    <td>Dr.kenny Josh</td>
+                                    <td>
+                                        12/04/2022
+                                    </td>
+                                    <td>10:45</td>
+                                    <td>
+                                        <div style="background-color: rgb(204, 112, 26);" class="pd-3 br wh f-container shdw">
+                                            <p class="f-16">Actions &nbsp; <i class="fa fa-angle-down"></i> </p>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <section class="pd-3">
+                        <div class="the-form2 shadow next-patients br-8 wh-bg m-btm-2 pd-3">
+                            <h2 class="m-btm-1">Patient's Details</h2>
+                            <form class="nurses-form">
+                                <label for="fname">First Name</label>
+                                <input type="text" id="fname" name="firstname" placeholder="Patient's Firstname..">
+
+                                <label for="lname">Last Name</label>
+                                <input type="text" id="lname" name="lastname" placeholder="Patient's Lastname..">
+
+                                <label for="address">Address</label>
+                                <input type="text" id="address" name="address" placeholder="Address..">
+
+                                <label for="Age">Age</label>
+                                <input type="text" id="age" name="age" placeholder="**..">
+
+                                <label for="lname">Height</label>
+                                <input type="text" id="height" name="height" placeholder="***..">
+
+                                <label for="weight">weight</label>
+                                <input type="text" id="weight" name="weight" placeholder="weight..">
+
+                                <label for="bp">BP Level</label>
+                                <input type="text" id="bpLevel" name="bpLevel" placeholder="**/ **..">
+
+                                <label for="department">Department</label>
+                                <select id="department" name="department">
+                                    <option value="obg">OBG</option>
+                                    <option value="gs">General Surgery</option>
+                                    <option value="opthamology">Opthamology</option>
+                                    <option value="radiology">Radiology</option>
+                                    <option value="dental">Dental</option>
+                                    <option value="oncology">Oncology</option>
+                                  </select>
+
+                                <label for="typeOfPatient">Department</label>
+                                <select id="typeOfPatient" name="typeOfPatient">
+                                    <option value="outPatient">Out Patient</option>
+                                    <option value="emergencyPatient">Emergency Patient</option>
+                                    <option value="regularPatient">Regular Patient</option>
+                                  </select>
+
+                                <input type="submit" value="Submit">
+                            </form>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="main-small">
+                    
+                    <div class="next-patients br-8 wh-bg m-btm-2">
+                        <img src="../images/big-calender.svg">
+                    </div>
+
+                    <div class="next-patients br-8 wh-bg m-btm-2">
+                        <img src="../images/patients by gender.svg">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <script src="https://kit.fontawesome.com/aedd297eaa.js" crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
+    <!--aos js file cdn link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            delay: 400
+        })
+    </script>
+</body>
+
+</html>
